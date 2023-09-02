@@ -6,6 +6,12 @@
 
 }
 
+body {
+   max-width: 900px;
+   margin: auto;
+}
+
+
 h2 {
    font-size: 2.3rem;
    font-weight: 700;
@@ -19,10 +25,11 @@ header {
    text-align: center;
 }
 
-.h-text{
+.h-text {
    font-size: 0.6rem;
 }
-main{
+
+main {
    overflow: hidden;
 }
 
@@ -35,15 +42,15 @@ main{
 .opc {
    font-size: 1.1rem;
    font-weight: 700;
-   padding: 15px 30px  10px 30px; 
+   padding: 15px 30px 10px 30px;
    margin: 10px;
    display: block;
    border-bottom: 4px solid #ffffff00;
 }
 
-.on{
+.on {
    border-bottom: 4px solid dodgerblue;
-} 
+}
 
 .text {
    font-size: 1rem;
@@ -53,17 +60,17 @@ main{
    margin-left: 10%;
 }
 
-.coder{
+.coder {
    display: flex;
-   width:  200vw;
-   position: relative; 
+   width: 200%;
+   position: relative;
 }
 
-.encoder{
+.encoder {
    width: 100vw;
 }
 
-.decoder{
+.decoder {
    width: 100vw;
 }
 
@@ -91,7 +98,7 @@ main{
    border-radius: 10px;
 }
 
-footer{
+footer {
    background-color: #fff;
    padding: 20px;
    text-align: center;
@@ -101,12 +108,11 @@ footer{
    margin-top: 10px;
 }
 
-footer p{
+footer p {
    color: #00000095;
 }
 
-footer a{
+footer a {
    color: dodgerblue;
    text-decoration: none;
 }
-
