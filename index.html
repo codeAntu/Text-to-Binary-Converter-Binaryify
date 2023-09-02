@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Binaryify</title>
+</head>
+
+<body>
+   <header>
+      <h2>Binaryify</h2>
+      <p>Convert your text to binary</p>
+   </header>
+   <main>
+      <div class="select">
+         <div class=" opc on " id="encod">Encoder</div>
+         <div class="opc" id="decod">Decoder</div>
+      </div>
+      <div class="coder" id="id-coder">
+         <div class="encoder " id="encoder">
+            <p class="text">Enter your text here : </p>
+            <textarea type="text" class="ipop" id="input1"></textarea>
+
+            <p class="text"> Encoded Output : </p>
+            <textarea type=" text" class="ipop " id="output1"></textarea>
+
+            <button class="btn" onclick="copyText1()">Coppy</button>
+         </div>
+
+         <div class="decoder">
+            <p class="text">Enter your code here : </p>
+            <textarea type="text" class="ipop" id="input2"></textarea>
+
+            <p class="text"> Decoted Output : </p>
+            <textarea type=" text" class="ipop " id="output2"></textarea>
+
+            <button class="btn" onclick="copyText2()">Coppy</button>
+         </div>
+      </div>
+
+   </main>
+
+   <footer>
+         <p class="creator">By <a href="https://github.com/codeAntu">CodeAntu</a></p>
+   </footer>
+
+   <script src="script.js"></script>
+</body>
+
+</html>
