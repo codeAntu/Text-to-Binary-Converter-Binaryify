@@ -1,5 +1,5 @@
 let outputVal1 = "";
-
+let outputVal2 = ""
 let encod = getId("encod");
 let decod = getId("decod");
 let coder = getId("id-coder")
@@ -23,26 +23,35 @@ function Encoder() {
    var input1 = getId("input1").value;
    var output1 = getId("output1");
    outputVal1 = "";
-
-   for (var i = 0; i < input1.length; i++) {
-      outputVal1 += input1[i].charCodeAt(0).toString(2) + " ";
+   for (let i = 0; i < input1.length; i++) {
+      const c = input1[i];
+      for (let j = 7; j >= 0; j--) {
+         let x = (c.charCodeAt(0) >> j) & 1;
+         outputVal1 += x.toString();
+      }
    }
    output1.value = outputVal1;
 }
 
-
 function Decoder() {
-   let input2 = getId("input2").value;
-   let output2 = getId("output2");
-   let outputVal2 = "";
+   var input2 = getId("input2").value; 
+   var output2 = getId("output2");
+   var decodedText = "";
 
-   input2= input2.split(" ");
-   for (let i = 0; i < input2.length-1; i++) {
-      outputVal2 += String.fromCharCode(parseInt(input2[i], 2));
+   var binaryChunks = input2.match(/.{8}/g);
+
+   if (binaryChunks) {
+      for (let i = 0; i < binaryChunks.length; i++) {
+         const binaryChunk = binaryChunks[i];
+         const decimalValue = parseInt(binaryChunk, 2); 
+         const char = String.fromCharCode(decimalValue); 
+         decodedText += char;
+      }
    }
 
-   output2.value = outputVal2;
+   output2.value = decodedText;
 }
+
 
 function copyText1() {
    output1.select();
