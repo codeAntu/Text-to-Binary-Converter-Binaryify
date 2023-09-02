@@ -7,7 +7,7 @@
 }
 
 h2 {
-   font-size: 2.5rem;
+   font-size: 2.2rem;
    font-weight: 700;
    color: dodgerblue;
    text-align: center;
@@ -15,7 +15,7 @@ h2 {
 
 header {
    background-color: #fff;
-   padding-top: 20px;
+   padding-top: 15px;
    text-align: center;
 }
 
@@ -35,7 +35,7 @@ main{
 .opc {
    font-size: 1.1rem;
    font-weight: 700;
-   padding: 15px 30px;
+   padding: 10px 30px ; 
    margin: 10px;
    display: block;
    border-bottom: 4px solid #ffffff00;
@@ -47,8 +47,7 @@ main{
 
 .text {
    font-size: 1rem;
-   padding: 20px 0px 10px 0px;
-   
+   padding: 20px 0px 8px 0px;
    font-weight: 600;
    width: 80%;
    margin-left: 10%;
@@ -99,7 +98,7 @@ footer{
    font-size: 1rem;
    font-weight: 700;
    color: #000;
-   margin-top: 40px;
+   margin-top: 10px;
 }
 
 footer p{
@@ -110,3 +109,4 @@ footer a{
    color: dodgerblue;
    text-decoration: none;
 }
+
