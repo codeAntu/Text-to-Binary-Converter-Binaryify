@@ -15,10 +15,13 @@ h2 {
 
 header {
    background-color: #fff;
-   padding-top: 30px;
+   padding-top: 20px;
    text-align: center;
 }
 
+.h-text{
+   font-size: 0.8rem;
+}
 main{
    overflow: hidden;
 }
@@ -45,6 +48,7 @@ main{
 .text {
    font-size: 1rem;
    padding: 20px 0px 10px 0px;
+   
    font-weight: 600;
    width: 80%;
    margin-left: 10%;
